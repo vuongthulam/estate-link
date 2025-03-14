@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "estate_link_backend": {
+      "main": "src/estate_link_backend/main.mo",
+      "type": "motoko"
+    },
+    "estate_link_frontend": {
+      "dependencies": [
+        "estate_link_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/estate_link_frontend/src/index.html"
+      },
+      "source": [
+        "src/estate_link_frontend/assets",
+        "dist/estate_link_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

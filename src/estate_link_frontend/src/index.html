@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EstateLink</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-links">
+          <a href="#" class="nav-item">Buy</a>
+          <a href="#" class="nav-item">Rent</a>
+          <a href="#" class="nav-item">Sell</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h1 class="hero-title">Find Your Dream Property on ICP</h1>
+        <form action="#" class="search-form">
+          <div class="search-input-group">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search by location, property type, or keywords"
+              class="search-input"
+            />
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i> Search Properties
+            </button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="featured-properties">
+        <h2 class="section-title">Featured Listings</h2>
+        <div class="properties-grid" id="greeting"></div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stats-card">
+          <i class="fas fa-home stats-icon"></i>
+          <h3 class="stats-number">1,200+</h3>
+          <p class="stats-label">Properties Listed</p>
+        </div>
+        <div class="stats-card">
+          <i class="fas fa-users stats-icon"></i>
+          <h3 class="stats-number">500+</h3>
+          <p class="stats-label">Happy Clients</p>
+        </div>
+        <div class="stats-card">
+          <i class="fas fa-globe stats-icon"></i>
+          <h3 class="stats-number">50+</h3>
+          <p class="stats-label">Cities Worldwide</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 ICP Estate Link DApp. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
